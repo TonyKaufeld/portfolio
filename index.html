@@ -36,46 +36,56 @@
         </div>
     </div>
 
-    <div id="home">
+    <section class="welkom" data-section-name="welkom" style="height: 10px !important;">
 
-        <div id="welkom">
+        <div id="home">
 
-            <div class="css-typing">
-                <p>Welkom op mijn website!</p>
+            <div id="welkom">
+
+                <div id="welkom-container">
+                    <div style="display:none;" class="css-typing">
+                        <p>Welkom op mijn website!</p>
+                    </div>
+                </div>
+
+                <video autoplay>
+                    <source src="image/jump.mp4" type="video/mp4">
+                </video>
+
             </div>
-
-            <video autoplay>
-                <source src="image/jump.mp4" type="video/mp4">
-            </video>
 
         </div>
 
-    </div>
+    </section>
 
     <!-- over mij ------------------------------------ -->
-    <div class="border">
 
-        Wie ben ik?
+    <section class="over_mij" data-section-name="over_mij";>
 
-    </div>
+        <div class="border">
 
-    <div id="over_mij">
+            Wie ben ik?
 
-        <div id="overmij_left">
-           
-            <div class="css-typing">
-                <p>deze div scrolled naar rechts</p>
+        </div>
+
+        <div id="over_mij">
+
+            <div id="overmij_left">
+
+                <div style="display:none;" class="css-typing">
+                    <p>deze div scrolled naar rechts</p>
+                </div>
+
+            </div>
+            <div id="overmij_right">
+
+                <img src="image/Ik.JPG">
+
             </div>
 
         </div>
-        <div id="overmij_right">
 
-            <img src="image/Ik.JPG">
-
-        </div>
-
-    </div>
-
+    </section>
 
     <!-- Opleiding ------------------------------------ -->
     <div class="border">
@@ -161,6 +171,32 @@
     <!-- jquery linken ----------------------------- -->
     <script src="jquery/jquery-3.3.1.js"></script>
     <script src="jquery/slide.js"></script>
+    <script src="jquery/jquery.scrollify.js"></script>
+
+    <script>
+
+        //-- Scrollify functies ------------------- --/
+        $.scrollify({
+            section : "section",
+            sectionName : "section-name",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {}
+        });
+
+        $(".css-typing").delay(1000).fadeIn(500);
+    </script>
 
 
 </body>

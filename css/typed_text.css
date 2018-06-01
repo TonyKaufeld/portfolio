@@ -7,24 +7,22 @@
     font-weight: 500;
 }
 
-.css-typing p:nth-child(1) 
+#welkom-container .css-typing p:nth-child(1)
 {
     width: 12em;
-    -webkit-animation: type 2s steps(44, end)
+    -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 
-.css-typing p:nth-child(1) 
+#overmij_left .css-typing p:nth-child(1)
 {
     width: 13em;
-    -webkit-animation: type 2s steps(44, end);
+    -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 
 @keyframes type 
@@ -120,7 +118,5 @@
 }
 .css-typing
 {
-    width: 50%;
-    height: 25%;
-    padding-left: 20%;
+
 }
