@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <section class="welkom" data-section-name="welkom" style="height: 10px !important;">
+    <section class="welkom" data-section-name="welkom">
 
         <div id="home">
 
@@ -60,7 +60,7 @@
 
     <!-- over mij ------------------------------------ -->
 
-    <section class="over_mij" data-section-name="over_mij";>
+    <section class="over_mij" data-section-name="over_mij">
 
         <div class="border">
 
@@ -88,116 +88,107 @@
     </section>
 
     <!-- Opleiding ------------------------------------ -->
-    <div class="border">
 
-        Mijn opleidingen
+    <section class="opleiding" data-section-name="opleiding">
 
-    </div>
+        <div class="border">
 
-    <div id="opleiding">
-
-        <div id="opleiding_right">
-
-            deze div scrolled naar rechts
-
-        </div>
-        <div id="opleiding_left">
-
-            <img src="image/Ik.JPG">
+            Mijn opleidingen
 
         </div>
 
-    </div>
+        <div id="opleiding">
 
-    <!-- Opleiding ------------------------------------ -->
-    <div class="border">
+            <div id="opleiding_right">
 
-        Mijn projecten
+                deze div scrolled naar rechts
 
-    </div>
+            </div>
+            <div id="opleiding_left">
 
-    <div id="project">
+                <img src="image/Ik.JPG">
 
-        <div id="project_right">
-
-            deze div scrolled naar rechts
-
-        </div>
-        <div id="project_left">
-
-            <img src="image/Ik.JPG">
+            </div>
 
         </div>
 
-    </div>
+    </section>
+
+    <!-- Project ------------------------------------ -->
+
+    <section class="project" data-section-name="project">
+
+        <div class="border">
+
+            Mijn projecten
+
+        </div>
+
+        <div id="project">
+
+            <div id="project_right">
+
+                deze div scrolled naar rechts
+
+            </div>
+            <div id="project_left">
+
+                <img src="image/Ik.JPG">
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- Contact ------------------------------------- -->
+
+    <section class="contact" data-section-name="contact">
+
     <div class="border">
 
         Contact
 
     </div>
 
-    <div id="contact">
-        <div id="contact_form">
+        <div id="contact">
+            <div id="contact_form">
 
-            <div id="form">
-                <div id="form-container">
-                    <h2>Contact mij!</h2>
+                <div id="form">
+                    <div id="form-container">
+                        <h2>Contact mij!</h2>
 
-                    <form method="post" action="......php">
-                        <label>Naam</label>
-                        <input type="text" placeholder="Enter your name" name="name" required>
-                        <br>
-                        <label>E-mail</label>
-                        <input type="text" placeholder="Enter your E-mail" name="E_mail" required>
-                        <br>
-                        <label>Schrijf hier uw bericht:</label>
-                        <textarea rows="4" cols="50"></textarea>
-                        <br>
-                        <button type="submit">Verzend</button>
-                    </form>
+                        <form method="post" action="">
+                            <label>Naam</label>
+                            <input type="text" placeholder="Enter your name" name="name" required>
+                            <br>
+                            <label>E-mail</label>
+                            <input type="text" placeholder="Enter your E-mail" name="E_mail" required>
+                            <br>
+                            <label>Schrijf hier uw bericht:</label>
+                            <label>
+                                <textarea rows="4" cols="50"></textarea>
+                            </label>
+                            <br>
+                            <button type="submit">Verzend</button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
+            <div id="contact_info">
 
+                Contact informatie.
+
+            </div>
         </div>
-        <div id="contact_info">
 
-            Contact informatie.
-
-        </div>
-    </div>
+    </section>
 
     <!-- jquery linken ----------------------------- -->
     <script src="jquery/jquery-3.3.1.js"></script>
-    <script src="jquery/slide.js"></script>
     <script src="jquery/jquery.scrollify.js"></script>
-
-    <script>
-
-        //-- Scrollify functies ------------------- --/
-        $.scrollify({
-            section : "section",
-            sectionName : "section-name",
-            interstitialSection : "",
-            easing: "easeOutExpo",
-            scrollSpeed: 1100,
-            offset : 0,
-            scrollbars: true,
-            standardScrollElements: "",
-            setHeights: true,
-            overflowScroll: true,
-            updateHash: true,
-            touchScroll:true,
-            before:function() {},
-            after:function() {},
-            afterResize:function() {},
-            afterRender:function() {}
-        });
-
-        $(".css-typing").delay(1000).fadeIn(500);
-    </script>
-
+    <script src="jquery/slide.js"></script>
 
 </body>
 

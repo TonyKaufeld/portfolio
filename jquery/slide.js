@@ -1,3 +1,5 @@
+//-- navigation buttons ------------------------- --/
+
 $('.position1').click(function () {
     $('html, body').stop().animate({
         scrollTop: $("#home").offset().top
@@ -81,3 +83,28 @@ $(window).bind("scroll", function () {
         $("#project_right").stop().fadeOut();
     }
 });
+
+//-- scrollify ------------------------------ --/
+
+$.scrollify({
+    section : "section",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: false,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+});
+
+//-- cc-typing ---------------------------- --/
+
+$(".css-typing").delay(1000).fadeIn(500);
