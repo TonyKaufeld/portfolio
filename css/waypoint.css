@@ -1,0 +1,45 @@
+.home_waypoint {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+
+.overmij_waypoint {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 929px;
+}
+
+.overmij_waypointt {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 1935px;
+}
+
+.opleiding_waypoint {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 2910px;
+}
+
+.opleiding_waypointt {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 1940px;
+}
+
+.project_waypoint {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+
+.contact_waypoint {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}

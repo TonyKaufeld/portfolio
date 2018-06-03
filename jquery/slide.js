@@ -118,7 +118,7 @@ $('li').hover(
 
 // -- active menu --------------------------- --/
 
-$('#welkom').waypoint(function() {
+$('#home').waypoint(function() {
     $("li").removeClass('actief');
     $( "li:nth-child(1)" ).addClass( "actief" );
 });
