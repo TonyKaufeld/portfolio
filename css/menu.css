@@ -4,53 +4,50 @@
     font-family: 'Ubuntu', sans-serif;
  }
 
-#menu {
-    content: "";
-    display: none /*table*/;
-    clear: both;
-    width: 100%;
-    background: #f4f7f6;
-    color: #202121;
-    height: 70px;
-    line-height: 70px;
-    font-size: 18px;
+ul {
     position: fixed;
-    transition: 0.3s all;
-    border-bottom: 1px solid #E6EAEA;
-    z-index: 2;
-}
-
-#menu-left {
-    width: auto;
-    float: left;
-    padding: 0 1%;
-    border-right: 1px solid #E6EAEA;
-}
-
-#menu-right {
-    width: 56.6666666667%;
-    float: right;
+    top: 45%;
+    bottom: 0;
+    right: 1%;
+    font-size: 1.2em;
+    z-index: 10;
+    color: #FFFFFF;
 }
 
 li {
-    float: left;
-    list-style: none;
-    float: right;
-    width: 16%;
-    text-align: center;
-    margin-bottom: 0% !important;
-    border-left: 1px solid #E6EAEA;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    display: block;
+    background: #aaa;
+    border-radius: 50%;
 }
 
-li:hover {
-    background-color: #49c5b6;
+.hover-text {
+    position: absolute;
+    right: -19px;
+    width: 100px;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 0.5s ease;
+    color: #FFFFFF;
 }
 
-a {
-    text-decoration: none;
-    color: #202121 !important;
+.hover-text:hover{
+    opacity: 1;
+}
+
+.hover {
+    background: transparent;
+    border: 1px solid #aaa;
+    width: 8px;
+    height: 8px;
+}
+
+.actief {
+    background: transparent;
+    border: 1px solid #FFFF;
+    width: 8px;
+    height: 8px;
 }
 
 .fadein {
