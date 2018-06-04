@@ -15,8 +15,8 @@ ul {
 }
 
 li {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     display: block;
     background: #aaa;
     border-radius: 50%;
@@ -28,7 +28,7 @@ li {
     width: 100px;
     opacity: 0;
     font-size: 12px;
-    transition: opacity 0.5s ease;
+    transition: all 0.3s ease-in-out;
     color: #FFFFFF;
 }
 
@@ -39,15 +39,17 @@ li {
 .hover {
     background: transparent;
     border: 1px solid #aaa;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .actief {
     background: transparent;
     border: 1px solid #FFFF;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .fadein {

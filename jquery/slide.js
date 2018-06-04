@@ -117,31 +117,59 @@ $('li').hover(
 );
 
 // -- active menu --------------------------- --/
+// offset when scrolling down
 
-$('#home').waypoint(function() {
+$('#home').waypoint(function(down) {
     $("li").removeClass('actief');
     $( "li:nth-child(1)" ).addClass( "actief" );
-});
+}, {offset: 100});
 
-$('#over_mij').waypoint(function() {
+$('#over_mij').waypoint(function(down) {
     $("li").removeClass('actief');
     $( "li:nth-child(2)" ).addClass( "actief" );
-});
+}, {offset: 100});
 
-$('#opleiding').waypoint(function() {
+$('#opleiding').waypoint(function(down) {
     $("li").removeClass('actief');
     $( "li:nth-child(3)" ).addClass( "actief" );
-});
+}, {offset: 100});
 
-$('#project').waypoint(function() {
+$('#project').waypoint(function(down) {
     $("li").removeClass('actief');
     $( "li:nth-child(4)" ).addClass( "actief" );
-});
+}, {offset: 100});
 
-$('#contact').waypoint(function() {
+$('#contact').waypoint(function(down) {
     $("li").removeClass('actief');
     $( "li:nth-child(5)" ).addClass( "actief" );
-});
+}, {offset: 100});
+
+//offset when scrolling up
+
+$('#home').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $( "li:nth-child(1)" ).addClass( "actief" );
+}, {offset: -100});
+
+$('#over_mij').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $( "li:nth-child(2)" ).addClass( "actief" );
+}, {offset: -100});
+
+$('#opleiding').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $( "li:nth-child(3)" ).addClass( "actief" );
+}, {offset: -100});
+
+$('#project').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $( "li:nth-child(4)" ).addClass( "actief" );
+}, {offset: -100});
+
+$('#contact').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $( "li:nth-child(5)" ).addClass( "actief" );
+}, {offset: -100});
 
 //-- add smooth scrolling ------------------- --/
 
@@ -162,5 +190,7 @@ $(document).ready(function(){
         }
     });
 });
+
+
 
 
