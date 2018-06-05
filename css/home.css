@@ -21,17 +21,29 @@
     width: 26%;
     font-size: 2.5vh;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 #welkom video {
     filter: grayscale(100%);
     width: 100%;
     height: 60%;
+    transition: all 0.3s ease-in-out;
 }
 
 #welkom-container {
     width: 50%;
     height: 25%;
     padding-left: 20%;
+}
+
+.welkom_hover {
+    padding-right: 9%;
+    width: 29% !important;
+}
+
+.welkom_hover_video {
+    width: 110% !important;
+    margin-left: 9%;
 }
 

@@ -90,54 +90,67 @@ $('li').hover(
 
 $('#home').waypoint(function(down) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(1)" ).addClass( "actief" );
 }, {offset: 100});
 
 $('#over_mij').waypoint(function(down) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(2)" ).addClass( "actief" );
 }, {offset: 100});
 
 $('#opleiding').waypoint(function(down) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(3)" ).addClass( "actief" );
 }, {offset: 100});
 
 $('#project').waypoint(function(down) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(4)" ).addClass( "actief" );
 }, {offset: 100});
 
 $('#contact').waypoint(function(down) {
     $("li").removeClass('actief');
-    $( "li:nth-child(5)" ).addClass( "actief" );
+    $("span").removeClass('hover-text-contact');
+    $( "li:nth-child(5)" ).addClass( "actief actief_contact" );
+    $( "span" ).addClass( "hover-text-contact" );
 }, {offset: 100});
 
 //offset when scrolling up
 
 $('#home').waypoint(function(up) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(1)" ).addClass( "actief" );
 }, {offset: -100});
 
 $('#over_mij').waypoint(function(up) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(2)" ).addClass( "actief" );
 }, {offset: -100});
 
 $('#opleiding').waypoint(function(up) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(3)" ).addClass( "actief" );
 }, {offset: -100});
 
 $('#project').waypoint(function(up) {
     $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(4)" ).addClass( "actief" );
 }, {offset: -100});
 
 $('#contact').waypoint(function(up) {
     $("li").removeClass('actief');
-    $( "li:nth-child(5)" ).addClass( "actief" );
+    $("span").removeClass('hover-text-contact');
+    $( "li:nth-child(5)" ).addClass( " actief actief_contact" );
+    $( "span" ).addClass( "hover-text-contact" );
+
 }, {offset: -100});
 
 //-- add smooth scrolling ------------------- --/
@@ -159,6 +172,19 @@ $(document).ready(function(){
         }
     });
 });
+
+//-- veranderd de breedte en margin bij de video en welkom div --/
+
+$( "span" ).hover(
+    function() {
+        $( "#welkom" ).addClass( "welkom_hover" );
+        $( "video" ).addClass( "welkom_hover_video" );
+    }, function() {
+        $( "#welkom" ).removeClass( "welkom_hover" );
+        $( "video" ).removeClass( "welkom_hover_video" );
+    }
+);
+
 
 
 

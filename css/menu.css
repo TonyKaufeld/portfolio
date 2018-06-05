@@ -32,6 +32,10 @@ li {
     color: #FFFFFF;
 }
 
+.hover-text-contact {
+    color: #AAA;
+}
+
 .hover1 {
     top: -1%;
 }
@@ -70,6 +74,10 @@ li {
     width: 10px;
     height: 10px;
     transition: all 0.3s ease-in-out;
+}
+
+.actief_contact {
+    border: 1px solid #AAA;
 }
 
 .fadein {
