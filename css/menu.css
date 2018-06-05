@@ -32,6 +32,26 @@ li {
     color: #FFFFFF;
 }
 
+.hover1 {
+    top: -1%;
+}
+
+.hover2 {
+    top: 2.8%;
+}
+
+.hover3 {
+    top: 6.8%;
+}
+
+.hover4 {
+    top: 10.8%;
+}
+
+.hover5 {
+    top: 14.8%;
+}
+
 .hover-text:hover{
     opacity: 1;
 }
