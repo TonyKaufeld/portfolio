@@ -1,35 +1,3 @@
-//-- navigation buttons ------------------------- --/
-
-/*$('.position1').click(function () {
-    $('html, body').stop().animate({
-        scrollTop: $("#home").offset().top
-    }, 2000);
-});
-
-$('.position2').click(function () {
-    $('html, body').stop().animate({
-        scrollTop: $("#over_mij").offset().top - 132.5
-    }, 2000);
-});
-
-$('.position3').click(function () {
-    $('html, body').stop().animate({
-        scrollTop: $("#opleiding").offset().top - 132.5
-    }, 2000);
-});
-
-$('.position4').click(function () {
-    $('html, body').stop().animate({
-        scrollTop: $("#project").offset().top - 132.5
-    }, 2000);
-});
-
-$('.position5').click(function () {
-    $('html, body').stop().animate({
-        scrollTop: $("#contact").offset().top - 500
-    }, 2000);
-});*/
-
 //-- overmij fadeIn effect --------------------- --/
 
 $(window).bind("scroll", function () {
@@ -47,6 +15,7 @@ $(window).bind("scroll", function () {
         $("#overmij_right").stop().fadeOut();
     }
 });
+
 
 //-- opleiding fadeIn effect ------------------- --/
 
