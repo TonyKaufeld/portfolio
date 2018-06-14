@@ -16,15 +16,6 @@
     animation-fill-mode: forwards;
 }
 
-#overmij_left .css-typing p:nth-child(1)
-{
-    width: 13em;
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
 @keyframes type 
 {
   0% {

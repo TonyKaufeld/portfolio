@@ -48,12 +48,16 @@ li {
     top: 6.8%;
 }
 
-.hover4 {
+.hover6 {
     top: 10.8%;
 }
 
-.hover5 {
+.hover4 {
     top: 14.8%;
+}
+
+.hover5 {
+    top: 18.8%;
 }
 
 .hover-text:hover{

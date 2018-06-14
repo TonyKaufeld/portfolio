@@ -35,6 +35,24 @@ $(window).bind("scroll", function () {
     }
 });
 
+//-- ervaring fadeIn effect ------------------- --/
+
+$(window).bind("scroll", function () {
+    if ($(this).scrollTop() > $("#ervaring").offset().top - 600) {
+        $("#ervaring_left").stop().fadeIn();
+    } else {
+        $("#ervaring_left").stop().fadeOut();
+    }
+});
+
+$(window).bind("scroll", function () {
+    if ($(this).scrollTop() > $("#ervaring").offset().top - 600) {
+        $("#ervaring_right").stop().fadeIn();
+    } else {
+        $("#ervaring_right").stop().fadeOut();
+    }
+});
+
 //-- project fadeIn effect ------------------- --/
 
 $(window).bind("scroll", function () {
@@ -109,13 +127,19 @@ $('#opleiding').waypoint(function(down) {
 $('#project').waypoint(function(down) {
     $("li").removeClass('actief');
     $("span").removeClass('hover-text-contact');
+    $( "li:nth-child(5)" ).addClass( "actief" );
+}, {offset: 100});
+
+$('#ervaring').waypoint(function(down) {
+    $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(4)" ).addClass( "actief" );
 }, {offset: 100});
 
 $('#contact').waypoint(function(down) {
     $("li").removeClass('actief');
     $("span").removeClass('hover-text-contact');
-    $( "li:nth-child(5)" ).addClass( "actief actief_contact" );
+    $( "li:nth-child(6)" ).addClass( "actief actief_contact" );
     $( "span" ).addClass( "hover-text-contact" );
 }, {offset: 100});
 
@@ -142,13 +166,19 @@ $('#opleiding').waypoint(function(up) {
 $('#project').waypoint(function(up) {
     $("li").removeClass('actief');
     $("span").removeClass('hover-text-contact');
+    $( "li:nth-child(5)" ).addClass( "actief" );
+}, {offset: -100});
+
+$('#ervaring').waypoint(function(up) {
+    $("li").removeClass('actief');
+    $("span").removeClass('hover-text-contact');
     $( "li:nth-child(4)" ).addClass( "actief" );
 }, {offset: -100});
 
 $('#contact').waypoint(function(up) {
     $("li").removeClass('actief');
     $("span").removeClass('hover-text-contact');
-    $( "li:nth-child(5)" ).addClass( " actief actief_contact" );
+    $( "li:nth-child(6)" ).addClass( " actief actief_contact" );
     $( "span" ).addClass( "hover-text-contact" );
 
 }, {offset: -100});
