@@ -1,0 +1,45 @@
+.cv {
+    border-bottom: solid 2px black;
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.cv_title {
+    margin-bottom: 4%;
+    font-style: italic;
+}
+
+.cv_left {
+    width: 50%;
+    float: left;
+    border-bottom: solid 2px black;
+}
+
+.cv_right {
+    width: 50%;
+    float: right;
+    border-bottom: solid 2px black;
+}
+
+.cv_ervaring_right p:nth-child(2) {
+    line-height: 2.5vh !important;
+    width: 50%;
+    float: right;
+    border-bottom: 2px solid black;
+    padding-bottom: 2%;
+}
+
+.cv_ervaring_left p:nth-child(2) {
+    border-bottom: 2px solid black;
+    padding-bottom: 26.6%;
+}
+
+.cv_ervaring_left {
+    width: 50%;
+    float: left;
+}
+
+#ervaring_right p {
+    font-size: 2vh;
+    line-height: 1vh;
+}

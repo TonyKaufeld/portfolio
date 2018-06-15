@@ -1,75 +1,78 @@
+//-- home ------------------------------------ --/
+
+$('#home').waypoint(function(down) {
+    $("div").removeClass('left right');
+}, {offset: 100});
+
+$('#home').waypoint(function(up) {
+    $("div").removeClass('left right');
+}, {offset: -100});
+
 //-- overmij fadeIn effect --------------------- --/
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#over_mij").offset().top - 600) {
-        $("#overmij_left").stop().fadeIn();
-    } else {
-        $("#overmij_left").stop().fadeOut();
-    }
-});
+$('#over_mij').waypoint(function(down) {
+    $("div").removeClass('left right');
+    $( "#overmij_left" ).addClass( "left" );
+    $( "#overmij_right" ).addClass( "right" );
+}, {offset: 100});
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#over_mij").offset().top - 600) {
-        $("#overmij_right").stop().fadeIn();
-    } else {
-        $("#overmij_right").stop().fadeOut();
-    }
-});
-
+$('#over_mij').waypoint(function(up) {
+    $("div").removeClass('left right');
+    $( "#overmij_left" ).addClass( "left" );
+    $( "#overmij_right" ).addClass( "right" );
+}, {offset: -100});
 
 //-- opleiding fadeIn effect ------------------- --/
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#opleiding").offset().top - 600) {
-        $("#opleiding_left").stop().fadeIn();
-    } else {
-        $("#opleiding_left").stop().fadeOut();
-    }
-});
+$('#opleiding').waypoint(function(down) {
+    $("div").removeClass('left right');
+    $( "#opleiding_left" ).addClass( "left" );
+    $( "#opleiding_right" ).addClass( "right" );
+}, {offset: 100});
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#opleiding").offset().top - 600) {
-        $("#opleiding_right").stop().fadeIn();
-    } else {
-        $("#opleiding_right").stop().fadeOut();
-    }
-});
+$('#opleiding').waypoint(function(up) {
+    $("div").removeClass('left right');
+    $( "#opleiding_left" ).addClass( "left" );
+    $( "#opleiding_right" ).addClass( "right" );
+}, {offset: -100});
 
 //-- ervaring fadeIn effect ------------------- --/
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#ervaring").offset().top - 600) {
-        $("#ervaring_left").stop().fadeIn();
-    } else {
-        $("#ervaring_left").stop().fadeOut();
-    }
-});
+$('#ervaring').waypoint(function(down) {
+    $("div").removeClass('left right');
+    $( "#ervaring_left" ).addClass( "left" );
+    $( "#ervaring_right" ).addClass( "right" );
+}, {offset: 100});
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#ervaring").offset().top - 600) {
-        $("#ervaring_right").stop().fadeIn();
-    } else {
-        $("#ervaring_right").stop().fadeOut();
-    }
-});
+$('#ervaring').waypoint(function(up) {
+    $("div").removeClass('left right');
+    $( "#ervaring_left" ).addClass( "left" );
+    $( "#ervaring_right" ).addClass( "right" );
+}, {offset: -100});
 
 //-- project fadeIn effect ------------------- --/
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#project").offset().top - 600) {
-        $("#project_left").stop().fadeIn();
-    } else {
-        $("#project_left").stop().fadeOut();
-    }
-});
+$('#project').waypoint(function(down) {
+    $("div").removeClass('left right');
+    $( "#project_left" ).addClass( "left" );
+    $( "#project_right" ).addClass( "right" );
+}, {offset: 100});
 
-$(window).bind("scroll", function () {
-    if ($(this).scrollTop() > $("#project").offset().top - 600) {
-        $("#project_right").stop().fadeIn();
-    } else {
-        $("#project_right").stop().fadeOut();
-    }
-});
+$('#project').waypoint(function(up) {
+    $("div").removeClass('left right');
+    $( "#project_left" ).addClass( "left" );
+    $( "#project_right" ).addClass( "right" );
+}, {offset: -100});
+
+//-- contact -------------------------------- --/
+
+$('#contact').waypoint(function(down) {
+    $("div").removeClass('left right');
+}, {offset: 100});
+
+$('#contact').waypoint(function(up) {
+    $("div").removeClass('left right');
+}, {offset: -100});
 
 //-- scrollify ------------------------------ --/
 
