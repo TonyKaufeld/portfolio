@@ -18,6 +18,7 @@
     position: absolute;
     right: -60%;
     transition: all 1s ease-in-out;
+    padding: 1%;
 }
 
 #ervaring_left {
@@ -37,4 +38,56 @@
 
 #ervaring_left img {
     width: 40%;
+}
+
+.test p {
+    float: left;
+    position: relative;
+    margin-left: 2%;
+}
+
+.test {
+    margin-left: 42%;
+}
+
+
+
+.test p:nth-child(2){
+    animation: mymove 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.test p:nth-child(4){
+    animation: mymove 2s;
+    animation-iteration-count: infinite;
+}
+
+.test p:nth-child(6){
+    animation: mymove 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.test p:nth-child(8){
+    animation: arrow 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    0%, 100% {
+        bottom: -5px;
+    }
+    50% {
+        bottom: 5px;
+    }
+}
+
+@keyframes arrow {
+    0%, 100% {
+        right: -5px;
+    }
+    50% {
+        right: 5px;
+    }
 }

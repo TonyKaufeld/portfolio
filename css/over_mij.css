@@ -30,6 +30,19 @@
     transition: all 1s ease-in-out;
 }
 
+#overmij_left img {
+    width: 70%;
+    border-radius: 10%;
+}
+
+.arrow p:nth-child(1) {
+    margin-top: 5%;
+}
+
+.arrow {
+    line-height: 0vh;
+}
+
 #overmij_right {
     background: #2d2d2d;
     color: #f4f7f6;
